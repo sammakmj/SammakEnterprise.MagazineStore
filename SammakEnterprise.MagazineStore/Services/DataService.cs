@@ -8,7 +8,7 @@ namespace SammakEnterprise.MagazineStore.Services
     {
         public async Task<TokenResponse> GetTokenAsync()
         {
-            var path = "token";
+            const string path = "token";
             return await GenericGetAsync<TokenResponse>(path);
         }
 
